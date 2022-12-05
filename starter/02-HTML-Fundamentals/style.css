@@ -1,0 +1,201 @@
+* {
+	/* border-top: 5px solid rgb(20, 196, 196); */
+	margin: 0px;
+	padding: 0;
+	border-color: blue;
+}
+body {
+	color: #444;
+	font-family: sans-serif;
+	border-top: 5px solid rgb(20, 196, 196);
+	position: relative;
+}
+.container {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.main_header {
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+	margin-bottom: 60px;
+}
+.post_header {
+	margin-bottom: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+	font-family: sans-serif;
+}
+h1,
+h2,
+h3 {
+	color: rgb(20, 196, 196);
+}
+.img {
+	margin-bottom: 40px;
+	width: 100%;
+	height: auto;
+}
+h1 {
+	font-size: 45px;
+	text-transform: uppercase;
+	font-style: italic;
+}
+nav{
+	text-align: center;
+}
+nav a:link {
+	margin-right: 10px;
+	margin-top: 10px;
+	display: inline-block;
+}
+nav a:link:last-child {
+	margin-right: 0;
+}
+
+h2 {
+	font-size: 40px;
+	margin-bottom: 30px;
+	position: relative;
+}
+p {
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+h3 {
+	font-size: 30px;
+	margin-bottom: 20px;
+	margin-top: 48px;
+	text-transform: uppercase;
+}
+li {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+h4 {
+	font-size: 20px;
+}
+ul,
+ol {
+	margin-left: 50px;
+	margin-bottom: 20px;
+}
+/*
+article header p {
+    font-style: italic;
+}*/
+#autor {
+	font-style: italic;
+	font-size: 18px;
+}
+#copyright {
+	font-size: 14px;
+}
+.related-author {
+	font-weight: bold;
+	font-size: 18px;
+}
+.related_posts {
+	padding: 30px 0;
+	text-align: center;
+}
+/* ul{
+    list-style: none;
+} */
+.related {
+	list-style: square;
+}
+.link {
+	color: black;
+	/* background-color: pink; */
+}
+aside {
+	background-color: #f7f7f7;
+	border-top: 5px solid rgb(36, 201, 201);
+	border-bottom: 5px solid rgb(36, 201, 201);
+	/* padding-top: 50px;
+	padding-bottom: 50px; */
+	width: 500px;
+	padding: 50px 0;
+}
+li:first-child {
+	font-weight: bold;
+}
+/* .first-li{
+    font-weight: bold;
+
+} */
+/* li:nth-last-child(even) {
+	font-style: italic;
+	color: cornflowerblue;
+} */
+/* this won't work */
+article p:first-child {
+	color: red;
+	margin-bottom: 60px;
+}
+
+/* styling links */
+a:link {
+	color: rgb(15, 222, 236);
+	text-decoration: none;
+}
+a:visited {
+	color: aqua;
+}
+a:hover {
+	color: orangered;
+	font-weight: bold;
+	text-decoration: underline dotted blue;
+}
+a:active {
+	background-color: rgb(12, 11, 11);
+	font-style: italic;
+}
+.copyyright {
+	color: blue;
+}
+button {
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	font-size: 25px;
+	color: red;
+	padding: 5px;
+	border: none;
+	cursor: pointer;
+	transition: 100ms;
+}
+div button:hover {
+	font-size: 30px;
+}
+
+h1::first-letter {
+	font-style: normal;
+	margin-right: 5px;
+}
+h3 + p::first-line /* adjacent; element below currentf*/ {
+	color: red;
+}
+h2::after {
+	content: "top";
+	text-transform: uppercase;
+	background-color: yellow;
+	font-size: 16px;
+	color: #444;
+	display: inline-block;
+	font-weight: bold;
+	padding: 5px 10px;
+	position: absolute;
+	top: -15px;
+	right: -25px;
+}
+
+
+/* using floats for layouts */

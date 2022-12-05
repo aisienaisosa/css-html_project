@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  border: 5px solid black;
+  width: 825px;
+  margin: 20px auto 50px auto;
+  position: relative;
+}
+.shoe-image {
+  /* margin-bottom: 10px;
+  margin-top: 15px; */
+  width: 242px;
+  margin-right: 40px;
+  float: left;
+}
+h1 {
+  background-color: rgb(224, 224, 224);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+main-header {
+  padding: 30px;
+}
+.number-65 {
+  font-weight: bolder;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+a:link,
+a:visited {
+  color: black;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+button {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  /* border:none; */
+  cursor: pointer;
+  /* margin-top: 20px; */
+  text-align: center;
+  width: 825px;
+  font-size: 20px;
+}
+button:hover,
+button:active {
+  background-color: white;
+  color: black;
+  /* border-top: 5px solid black; */
+}
+.free_shipping {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 10px;
+}
+.product_details {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+ul {
+  list-style: square;
+}
+li {
+  margin-bottom: 10px;
+  margin-left: 18px;
+}
+p {
+  margin-bottom: 10px;
+}
+.sale-button {
+  position: absolute;
+  color: white;
+  background-color: red;
+  font-size: 16px;
+  width: fit-content;
+  height: auto;
+  display: inline-block;
+  padding: 5px;
+  top: -40px;
+  left: -30px;
+  border: none;
+  letter-spacing: 2px;
+}
+.sale-button:hover {
+  border: none;
+}
+.color {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  margin-right: 5px;
+}
+.color::after {
+  content: "";
+  clear: both;
+  display: inline-block;
+  position: absolute;
+}
+.color-black {
+  background-color: black;
+}
+.color-blue {
+  background-color: blue;
+}
+.color-red {
+  background-color: red;
+}
+.color-yellow {
+  background-color: yellow;
+}
+.color-green {
+  background-color: green;
+}
+.color-brown {
+  background-color: brown;
+}
+.product-container {
+  width: 242px;
+  float: left;
+}
+.move-left {
+  width: 242px;
+  display: inline-block;
+  float: left;
+  margin-right: 40px;
+  position: relative;
+}
