@@ -4,24 +4,19 @@
 	padding: 0;
 	border-color: blue;
 }
+/*  PAGE SECTIONS CONTAINING THE MAIN ELEMENTS */
 body {
 	color: #444;
 	font-family: sans-serif;
-	border-top: 5px solid rgb(20, 196, 196);
-	position: relative;
-}
-.container {
-	width: 800px;
-	margin: 0 auto;
-}
+	border-top: 5px solid rgb(20, 196, 196); /*short hand for size, and color*/
+	/* there are different types of boxes in css 
 
-.main_header {
-	background-color: #f7f7f7;
-	padding: 20px 40px;
-	margin-bottom: 60px;
-}
-.post_header {
-	margin-bottom: 30px;
+	1. inline-box: this only contains the size of the elements within it, padding and marging are only applied to the sides not heights and widths. heights and widths do not affeect inline elements.
+
+	2. block-level:  applies the entire width of the parent elements 
+
+	3. inline-block: this behaves like inline element outside; meaning only cover the space of the size of the elements. It also behaves like block level element inside meaning both heights and widths can be changed*/
+	position: relative;
 }
 
 h1,
@@ -43,20 +38,24 @@ h3 {
 	height: auto;
 }
 h1 {
-	font-size: 45px;
+	font-size: 30px;
 	text-transform: uppercase;
 	font-style: italic;
 }
-nav{
-	text-align: center;
+nav {
+	text-transform: capitalize;
+	text-decoration: solid;
+	font-size: 20px;
 }
 nav a:link {
-	margin-right: 10px;
-	margin-top: 10px;
+	/* margin-right: 10px;
+	margin-top: 10px; */
 	display: inline-block;
+	margin-right: 20px;
 }
 nav a:link:last-child {
-	margin-right: 0;
+	/* pseudo-elements to pick the last-child of the nav link*/
+	margin-right: 0px;
 }
 
 h2 {
@@ -90,6 +89,114 @@ ol {
 article header p {
     font-style: italic;
 }*/
+
+aside {
+	background-color: #f7f7f7;
+	border-top: 5px solid rgb(36, 201, 201);
+	border-bottom: 5px solid rgb(36, 201, 201);
+	/* padding-top: 50px;
+	padding-bottom: 50px; */
+	width: 1200px;
+	padding: 50px 0;
+}
+li:first-child {
+	font-weight: bold;
+}
+/* .first-li{
+    font-weight: bold;
+
+} */
+/* li:nth-last-child(even) {
+	font-style: italic;
+	color: cornflowerblue;
+} */
+/* this won't work */
+article p:first-child {
+	color: red;
+	margin-bottom: 60px;
+}
+
+/* styling links */
+a:link {
+	color: rgba(6, 209, 209, 0.856);
+	text-decoration: none;
+}
+a:visited {
+	color: rgb(36, 201, 201);
+}
+a:hover {
+	color: rgb(255, 0, 0);
+	font-weight: bold;
+	text-decoration: underline dotted blue;
+}
+a:active {
+	background-color: rgb(12, 12, 11);
+	font-style: italic;
+}
+.copyyright {
+	color: blue;
+}
+button {
+	position: absolute; /*this doesn't flow through the normal flow of the page. it follows the relative element declared. parameters include top, bottom, right and left.
+	this button  is positioned relative to body.*/
+	bottom: 50px;
+	right: 50px;
+	font-size: 25px;
+	/* color: red; */
+	padding: 5px;
+	border: none;
+	cursor: pointer;
+	transition: 100ms;
+}
+div button:hover {
+	/* this pseudo class used for selecting the hover sate of the button*/
+	font-size: 30px;
+}
+
+h1::first-letter {
+	/* this pseudo element used to select the first letter of all h1 elements*/
+	font-style: normal;
+	margin-right: 5px;
+}
+h3 + p::first-line /* adjacent; element below currentf*/ {
+	color: red;
+}
+h2::after {
+	/* :: this is a pseudo element used to style in css contents that are not normally in the structure of the html.*/
+	content: "top"; /* content must be include even if empty, that's the only way it's going to  work*/
+	text-transform: uppercase;
+	background-color: yellow;
+	font-size: 16px;
+	color: #444;
+	display: inline-block; /*behaves like inline outward; covering only required space and behaves like block in the inside; heights and widths as well as padding on the horizontal and vertical*/
+	font-weight: bold;
+	padding: 5px 10px;
+	position: absolute;
+	top: -15px;
+	right: -25px;
+}
+
+/* p::first-line{
+	color: rebeccapurple;
+}   affects all paragraph first-lines*/
+/* ID'S AND ELEMENTS  */
+.container {
+	/* to center the contents in the page*/
+	width: 1200px;
+	margin-left: auto; /*automatic*/
+	margin-right: auto; /* automatic, we do this to automatically let the browser figure at the margin-left and margin-right */
+	margin: 0 auto; /* short-hand for the above. 0: stands for top and bottom, while auto stands for left and right*/
+}
+
+.main_header {
+	background-color: #f8f8f8be;
+	padding: 20px 15px;
+	margin-bottom: 60px;
+}
+.post_header {
+	margin-bottom: 30px;
+}
+
 #autor {
 	font-style: italic;
 	font-size: 18px;
@@ -115,87 +222,51 @@ article header p {
 	color: black;
 	/* background-color: pink; */
 }
-aside {
-	background-color: #f7f7f7;
-	border-top: 5px solid rgb(36, 201, 201);
-	border-bottom: 5px solid rgb(36, 201, 201);
-	/* padding-top: 50px;
-	padding-bottom: 50px; */
-	width: 500px;
-	padding: 50px 0;
-}
-li:first-child {
-	font-weight: bold;
-}
-/* .first-li{
-    font-weight: bold;
-
-} */
-/* li:nth-last-child(even) {
-	font-style: italic;
-	color: cornflowerblue;
-} */
-/* this won't work */
-article p:first-child {
-	color: red;
-	margin-bottom: 60px;
-}
-
-/* styling links */
-a:link {
-	color: rgb(15, 222, 236);
-	text-decoration: none;
-}
-a:visited {
-	color: aqua;
-}
-a:hover {
-	color: orangered;
-	font-weight: bold;
-	text-decoration: underline dotted blue;
-}
-a:active {
-	background-color: rgb(12, 11, 11);
-	font-style: italic;
-}
-.copyyright {
-	color: blue;
-}
-button {
-	position: absolute;
-	bottom: 50px;
-	right: 50px;
-	font-size: 25px;
-	color: red;
-	padding: 5px;
-	border: none;
-	cursor: pointer;
-	transition: 100ms;
-}
-div button:hover {
-	font-size: 30px;
-}
-
-h1::first-letter {
-	font-style: normal;
-	margin-right: 5px;
-}
-h3 + p::first-line /* adjacent; element below currentf*/ {
-	color: red;
-}
-h2::after {
-	content: "top";
-	text-transform: uppercase;
-	background-color: yellow;
-	font-size: 16px;
-	color: #444;
-	display: inline-block;
-	font-weight: bold;
-	padding: 5px 10px;
-	position: absolute;
-	top: -15px;
-	right: -25px;
-}
-
 
 /* using floats for layouts */
+/* using flex-box */
+.main_header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.author-box {
+	display: flex;
+}
+.author {
+	margin-bottom: 0;
+	margin-left: 10px;
+}
+.related-post {
+	display: flex;
+	align-items: center;
+	gap: 20px; /* provide space between elements*/
+	margin-bottom: 30px;
+}
+.related-link {
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	font-style: normal;
+	margin-bottom: 5px;
+}
+.related-author {
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: italic;
+}
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+aside {
+	/*
+	DEFAULTS:
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	*/
+	flex: 0 0 300px;
+	height: 450px;
+}

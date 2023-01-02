@@ -267,8 +267,9 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
 /* floats as layouts */
-.img-author {
+/* .img-author {
   float: left;
   margin-bottom: 30px;
 }
@@ -283,13 +284,14 @@ h1 {
 /* h2{
   float:right;
 } */
-nav {
+/* nav {
   float: right;
 }
 /* .clear {
   clear: both;
 } */
-.clearfix::after {
+
+/* .clearfix::after {
   content: "";
   clear: both;
   display: block;
@@ -307,4 +309,6 @@ article{
 footer{
   background-color: yellow;
   clear: both;
-}
+} */
+/* using flexbox */
+/* flexbox makes it easy to align items side-by-side in css. we have two axis 1) main-axis 2)main-axis. properties for the flex container !) gap, 2*/

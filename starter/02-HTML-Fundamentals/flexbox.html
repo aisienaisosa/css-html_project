@@ -14,7 +14,7 @@
       }
       .el--3 {
         background-color: green;
-        height: 150px;
+        height: 250px;
       }
       .el--4 {
         background-color: goldenrod;
@@ -28,9 +28,7 @@
       .el--7 {
         background-color: yellow;
       }
-      .el--8 {
-        background-color: crimson;
-      }
+      
 
       .container {
         /* STARTER */
@@ -38,8 +36,36 @@
         background-color: #ddd;
         font-size: 40px;
         margin: 40px;
+        /* FLEXBOX */ 
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        gap: 30px;  /* gives spaces around elements */
+        
+      }
+      .el{
+        /* margin-right: 30px; */
+        display: flex;
+        /* other properties like flexgrow, flexshrink and flexbasis */
 
-        /* FLEXBOX */
+        /* defaults */
+        /*flex-shrink: 0; this shrinks the content to fit the required space of the element
+         flex-grow: 1; this grow the content to fit the parent elemrnt
+        flex-basis: autu; for defining the width of the element though the broswer knows how to impliment it.
+         */
+         /* flex: 0, 1, auto;   shorthand */
+
+        flex-grow: 1;
+      }
+      .el--1 {
+        align-self: flex-start;
+      }
+      .el--5 {
+        align-self:baseline;
+        order: -1;
+      }  
+      .el--8 {
+        background-color: crimson; 
       }
     </style>
   </head>
